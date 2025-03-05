@@ -11,7 +11,7 @@ To set up the project, ensure you have Python installed, then install the requir
 
 ```sh
 pip install kagglehub numpy pandas matplotlib seaborn langchain-openai \
-            langchain-gemini langchain-community langchain-chroma gradio \
+            langchain-huggingface langchain-community langchain-chroma gradio \
             transformers notebook ipywidgets
 ```
 
