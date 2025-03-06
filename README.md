@@ -23,6 +23,29 @@ pip install kagglehub numpy pandas matplotlib seaborn langchain-openai \
 - **Interactive UI:** `gradio`
 - **Notebook Support:** `notebook`, `ipywidgets`
 
+## 🧠 Theory Behind the Project
+
+### 🔤 Word Embeddings
+Word embeddings are numerical vector representations of words in a continuous vector space. They allow words with similar meanings to have similar representations, making them essential for NLP tasks. We use **pre-trained transformer-based embeddings** to convert book metadata into vector representations, enabling efficient similarity comparisons in our recommendation engine.
+
+Popular word embedding techniques include:
+- **Word2Vec** (Mikolov et al.)
+- **GloVe** (Pennington et al.)
+- **BERT Embeddings** (Context-aware)
+
+For this project, we leverage **transformer-based embeddings** from `Hugging Face` to create high-quality vector representations of books.
+
+### 🤖 Transformers
+Transformers are a deep learning architecture designed for NLP tasks. They use self-attention mechanisms to process text efficiently and capture contextual meaning. We utilize transformer-based models (like BERT, GPT, or OpenAI embeddings) to generate rich representations of book metadata, improving recommendation accuracy.
+
+Key features of transformers:
+- **Self-Attention Mechanism**: Helps models focus on important parts of text
+- **Bidirectional Context Understanding**: Captures meaning from both left and right context
+- **Scalability**: Suitable for large-scale NLP tasks
+
+### 🏷️ Zero-Shot Classification for Categorization
+Since book categories can be vast and dynamic, we employ **zero-shot classification** using transformer models. This allows us to classify books into predefined genres **without labeled training data**. By using models like `facebook/bart-large-mnli`, we match book descriptions with relevant genres on-the-fly, making the system flexible and adaptive.
+
 ## 🚀 Features
 - 📖 **Personalized Book Recommendations** based on metadata and AI-driven insights
 - 🔍 **Search and Filter Books** using natural language queries
@@ -42,5 +65,3 @@ This project is open-source and available under the MIT License.
 
 ---
 ⭐ If you like this project, give it a star on GitHub!
-
-
