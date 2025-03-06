@@ -49,13 +49,6 @@ Popular word embedding techniques include:
 For this project, we leverage **transformer-based embeddings** from `Hugging Face`, specifically the **`sentence-transformers/all-MiniLM` model**, to create high-quality vector representations of books.
 Word embeddings are numerical vector representations of words in a continuous vector space. They allow words with similar meanings to have similar representations, making them essential for NLP tasks. We use **pre-trained transformer-based embeddings** to convert book metadata into vector representations, enabling efficient similarity comparisons in our recommendation engine.
 
-Popular word embedding techniques include:
-- **Word2Vec** (Mikolov et al.)
-- **GloVe** (Pennington et al.)
-- **BERT Embeddings** (Context-aware)
-
-For this project, we leverage **transformer-based embeddings** from `Hugging Face` to create high-quality vector representations of books.
-
 ### 🤖 Transformers
 Transformers are a deep learning architecture designed for NLP tasks. They use self-attention mechanisms to process text efficiently and capture contextual meaning. We utilize transformer-based models (like BERT, GPT, or OpenAI embeddings) to generate rich representations of book metadata, improving recommendation accuracy.
 
