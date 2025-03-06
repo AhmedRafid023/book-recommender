@@ -25,6 +25,12 @@ pip install kagglehub numpy pandas matplotlib seaborn langchain-openai \
 
 ## 🧠 Theory Behind the Project
 
+### 😊 Sentiment Analysis
+To enhance book recommendations, we incorporate **sentiment analysis** on user reviews. By analyzing emotions expressed in book reviews, we refine recommendations based on reader sentiment. We use a fine-tuned **RoBERTa model** from Hugging Face:
+- **Model:** `j-hartmann/emotion-english-distilroberta-base`
+- **Purpose:** Detect emotions in text (e.g., joy, sadness, anger, surprise, etc.)
+- **Impact:** Helps recommend books that align with users' emotional preferences
+
 ### 🔤 Word Embeddings
 Word embeddings are numerical vector representations of words in a continuous vector space. They allow words with similar meanings to have similar representations, making them essential for NLP tasks. We use **pre-trained transformer-based embeddings** to convert book metadata into vector representations, enabling efficient similarity comparisons in our recommendation engine.
 
@@ -65,3 +71,5 @@ This project is open-source and available under the MIT License.
 
 ---
 ⭐ If you like this project, give it a star on GitHub!
+
+
