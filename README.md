@@ -32,12 +32,6 @@ pip install kagglehub numpy pandas matplotlib seaborn langchain-openai \
 
 ## 🧠 Theory Behind the Project
 
-### 😊 Sentiment Analysis
-To enhance book recommendations, we incorporate **sentiment analysis** on user reviews. By analyzing emotions expressed in book reviews, we refine recommendations based on reader sentiment. We use a fine-tuned **RoBERTa model** from Hugging Face:
-- **Model:** `j-hartmann/emotion-english-distilroberta-base`
-- **Purpose:** Detect emotions in text (e.g., joy, sadness, anger, surprise, etc.)
-- **Impact:** Helps recommend books that align with users' emotional preferences
-
 ### 🔤 Word Embeddings
 Word embeddings are numerical vector representations of words in a continuous vector space. They allow words with similar meanings to have similar representations, making them essential for NLP tasks. We use **pre-trained transformer-based embeddings** to convert book metadata into vector representations, enabling efficient similarity comparisons in our recommendation engine.
 
@@ -59,6 +53,12 @@ Key features of transformers:
 
 ### 🏷️ Zero-Shot Classification for Categorization
 Since book categories can be vast and dynamic, we employ **zero-shot classification** using transformer models. This allows us to classify books into predefined genres **without labeled training data**. By using models like `facebook/bart-large-mnli`, we match book descriptions with relevant genres on-the-fly, making the system flexible and adaptive.
+
+### 😊 Sentiment Analysis
+To enhance book recommendations, we incorporate **sentiment analysis** on user reviews. By analyzing emotions expressed in book reviews, we refine recommendations based on reader sentiment. We use a fine-tuned **RoBERTa model** from Hugging Face:
+- **Model:** `j-hartmann/emotion-english-distilroberta-base`
+- **Purpose:** Detect emotions in text (e.g., joy, sadness, anger, surprise, etc.)
+- **Impact:** Helps recommend books that align with users' emotional preferences
 
 ## 🚀 Features
 - 📖 **Personalized Book Recommendations** based on metadata and AI-driven insights
