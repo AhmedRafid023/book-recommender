@@ -66,6 +66,10 @@ To enhance book recommendations, we incorporate **sentiment analysis** on user r
 - 🎨 **User-Friendly Interface** powered by Gradio
 - 📊 **Data Visualization** for book insights and trends
 
+## Preview
+![Book Recommender Preview](assets/preview.png)
+
+
 ## 🔮 Future Enhancements
 - 🔗 Integration with external book APIs for enriched recommendations
 - 📈 Improving the recommendation engine using deep learning
